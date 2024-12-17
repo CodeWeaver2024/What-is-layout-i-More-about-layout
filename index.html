@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="logo.svg" type="image/x-icon">
+        <title>Что такое верстка?</title> 
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
+                line-height: 1.6;
+            }
+            header {
+                background-color: #007bff;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+            header h1 {
+                margin-bottom: 10px;
+            }
+            header p {
+                margin-bottom: 20px;
+            }
+            a {
+                color: #28a745;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+<body>
+<header>
+    <img src="img/logo.png" alt="Логотип" id="logo" stye="200px; height: auto;">
+    <h1>
+        Что такое верстка?
+    </h1>
+    <p>
+        верстка — это процесс создания структуры и дизайна веб-страницы с помощью HTML и CSS.
+    </p>
+    <p><strong>Что такое верстка?</strong></p>
+<p>Верстка — это процесс размещения и стилизации элементов на веб-странице с использованием HTML и CSS. В HTML создаются структурные элементы, такие как заголовки, абзацы, изображения, списки, а с помощью CSS задаются стили для этих элементов, включая шрифты, цвета, отступы и другие визуальные характеристики.</p>
+<p>Цель верстки — сделать страницу визуально привлекательной и удобной для восприятия пользователями.</p>
+
+    <a href="page2.html">Подробнее о верстке</a>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Этот код будет выполнен, когда вся страница загрузится.
+        const link = document.querySelector('a'); // находим ссылку
+        link.addEventListener('click', function(event) {
+            console.log('Ссылка была нажата');
+        });
+    });
+</script>
+</header>
+</body>
+</html>
+   
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="logo.svg" type="image/x-icon">
+        <title>Подробнее о верстке</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.png" alt="Логотип" id="logo">
+            <h1>
+                Подробнее о верстке
+            </h1>
+            <p>Верстка включает в себя несколько аспектов: использование HTML для структуры и CSS для стилей.</p>
+            <a href="index.html">Вернуться на главную</a>
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const links = document.querySelectorAll('a'); // находим все ссылки
+                links.forEach(link => {
+                    link.addEventListener('click', function(event) {
+                        console.log('Ссылка была нажата');
+                    });
+                });
+            });
+            </script>
+            </header>
+    </body>
+</html>
+
+-->
